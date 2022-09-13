@@ -24,12 +24,11 @@ function Moon() {
     })
   })
   useFrame(()=>{
-    sphereRef.current.rotation.y+=0.0005
+    sphereRef.current.rotation.y+=0.002
     gsap.to(
       groupRef.current.rotation,
       {
-        x:-cursor.y*0.06,
-        y:cursor.x*0.06,
+        y:cursor.x*0.5,
         duration:2
       }
     )
